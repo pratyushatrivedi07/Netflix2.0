@@ -3,8 +3,18 @@
 - create-react-app
 - Configured tailwind css
 - Header
-- Login Form
-- Sing Up Form
+- Routing of App
+- Login / Sign Up Form
+- Form Validation
+- useRef hook()
+- Firebase Setup
+- Deploying App to Prod (using Firebase)
+- Create Sign up User Account (in Firebase)
+- Implement Sign In User
+- Created Redux Store with User Slice
+- Implemented Sign out
+- Update Profile
+- Fetch Movies from TMDB (//TODO)
 
 # Features
 
