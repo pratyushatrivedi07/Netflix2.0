@@ -4,7 +4,7 @@ import { auth } from "../utils/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { addUser, logOutUser } from "../utils/userSlice";
+import { addUser, logOutUser } from "../store/userSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -45,13 +45,17 @@ const Header = () => {
 
   return (
     <div className="absolute px-8 py-2 bg-gradient-to-b from-black w-full z-10 flex justify-between">
-      <img className="w-44 ml-15" src={LOGO} alt="logo" />
+      <img
+        className={` ${user ? "w-32 ml-10" : "w-44 ml-15"}`}
+        src={LOGO}
+        alt="logo"
+      />
       {user && (
-        <div className="flex items-center space-x-2 p-2">
-          <img src={user.photoURL} alt="icon" className="w-12 h-12"/>
+        <div className="flex items-center space-x-3 p-2">
+          <img src={user.photoURL} alt="icon" className="w-8 h-8 rounded-md" />
           <button
             onClick={handleSignOut}
-            className="text-white font-light text-sm hover:underline hover:underline-offset-2 cursor-pointer"
+            className="text-white text-xs hover:underline hover:underline-offset-2 cursor-pointer"
           >
             Sign Out
           </button>
