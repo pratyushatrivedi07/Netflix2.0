@@ -4,5 +4,25 @@ export const LOGO =
 export const BG_IMG =
   "https://assets.nflxext.com/ffe/siteui/vlv3/cb72daa5-bd8d-408b-b949-1eaef000c377/web/IN-en-20250825-TRIFECTA-perspective_a3209894-0b01-4ddb-b57e-f32165e20a3f_large.jpg";
 
-export const USER_ICON =
+const USER_ICON_1 =
   "https://occ-0-4875-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABbgX5bikFO78GvuBmI5xN1mJOqv9OI65WXKq5f0suWLiRJucYqtWgTZrToyesA2K0SQHzT-P21LPrgLY1utk_a3dhRApJSA.png?r=989";
+
+const USER_ICON_2 =
+  "https://occ-0-4875-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABSNnLF5FKHnuVlvjAtmLTLQ6GgsHrqnhZTV0RCYL_gh844aoNQWEI-NKKPyXQva1dXxuKWgbeBR7Sv0-q7T7hj5rnbopuz--gw.png?r=00c";
+const USER_ICON_3 =
+  "https://occ-0-4875-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABcpfb-srl4rWCtCDsUIXxfsAb16PPd_a0aSAYFFxfeL7LNt1JGiatbXt2K4x4SeofCYSCnLdey9tyKhu9WAxLZxpB1ANP3I5wA.png?r=8ff";
+const USER_ICON_4 =
+  "https://occ-0-4875-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABbUCV6DkXMCecWEhzECLy1RalI7-naFgfG_nGbNyoY4gzg14KbkE4aQtnIGFeCzfxk3uCRnKKod0rztHouAuwy7_tf_4ocaS1w.png?r=a72";
+const USER_ICON_5 =
+  "https://occ-0-4875-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABT9wBL4i4yFGrzSmwSuCMGZ3xf0v-MGTX2aBnMcKMXV-FF1FDo5jFK78YT6FubASMkAanbDSHqHHJLJfTyEVhlfrTnyYYULImQ.png?r=e6e";
+const USER_ICON_6 =
+  "https://occ-0-4875-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABUhjP3-tij2B6zDSwxOw2hkGygAp8WjokRSWy01aFyrF6xuwwdnYbPFIwEY-F1Xda_LQdubtyu1NrCvDWXOT3mDfgdaJU1Wsqw.png?r=81c";
+
+export const USER_ICONS = [
+  USER_ICON_1,
+  USER_ICON_2,
+  USER_ICON_3,
+  USER_ICON_4,
+  USER_ICON_5,
+  USER_ICON_6,
+];

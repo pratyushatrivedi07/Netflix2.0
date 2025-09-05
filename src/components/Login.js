@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import Header from "./Header";
-import { BG_IMG } from "../utils/constants";
+import { BG_IMG, USER_ICONS } from "../utils/constants";
 import {
   validateEmail,
   validateName,
@@ -12,12 +12,11 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { generateRandomNumber } from "../utils/commons";
 
 const Login = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -34,6 +33,11 @@ const Login = () => {
 
   const toggleSignUpForm = () => {
     setIsSignInForm(!isSignInForm);
+  };
+
+  const profilePic = () => {
+    const index = generateRandomNumber(USER_ICONS);
+    return USER_ICONS[index];
   };
 
   const handleButtonClick = () => {
@@ -68,20 +72,22 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
+          const photoURL = profilePic();
 
           updateProfile(user, {
             displayName: name.current.value,
+            photoURL: photoURL,
           })
             .then(() => {
-              const { uid, email, displayName } = auth.currentUser;
+              const { uid, email, displayName, photoURL } = auth.currentUser;
               dispatch(
                 addUser({
                   uid: uid,
                   email: email,
                   name: displayName,
+                  photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               setErrors((prev) => ({
@@ -108,7 +114,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
