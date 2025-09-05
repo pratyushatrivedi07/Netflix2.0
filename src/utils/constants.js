@@ -26,3 +26,15 @@ export const USER_ICONS = [
   USER_ICON_5,
   USER_ICON_6,
 ];
+
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MjZmN2E5MmIxOGZjZTQzN2IwMDgyZWE0Yjk3NTBhZSIsIm5iZiI6MTc1NzA3OTUyNy4zMTIsInN1YiI6IjY4YmFlN2U3Zjc2NzUyODdmZjk0NmFlNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VB3IWeOAwSzys3MgyU0IFug6n_rlfWmsxCm6imcPf0Q",
+  },
+};
+
+export const NOW_PLAYING_MOVIES_URL =
+  "https://api.themoviedb.org/3/movie/now_playing?page=1";

@@ -17,7 +17,8 @@
 - BUG FIX: Restricting redirection to Login and Browse on basis of auth
 - Unsubscribed to the onAuthStateChanged callback
 - FIX: Assigning Random Profile Icons during signups
-- Fetch Movies from TMDB
+- Register for TMDB API, get Access Token
+- Fetch Movies from Now Playing List in Documentation (API Reference)
 
 # Features
 
