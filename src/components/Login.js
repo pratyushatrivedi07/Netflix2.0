@@ -15,11 +15,13 @@ import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/userSlice";
 import { generateRandomNumber } from "../utils/commons";
+import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 
 const Login = () => {
   const dispatch = useDispatch();
 
   const [isSignInForm, setIsSignInForm] = useState(true);
+  const [isShowPassowrd, setIsShowPassword] = useState(false);
   const [errors, setErrors] = useState({
     email: null,
     password: null,
@@ -162,12 +164,20 @@ const Login = () => {
         <p className="text-red-500 py-0.5 text-sm/tight font-light">
           {errors.email}
         </p>
-        <input
-          ref={password}
-          type="password"
-          placeholder="Password"
-          className="p-4 my-3 w-full rounded-md bg-gray-800/50 border border-gray-500 focus:border focus:outline-1 focus:outline-offset-4 focus:outline-white"
-        />
+        <div className="relative">
+          <input
+            ref={password}
+            type={!isShowPassowrd ? "password" : "text"}
+            placeholder="Password"
+            className="p-4 my-3 w-full rounded-md bg-gray-800/50 border border-gray-500 focus:border focus:outline-1 focus:outline-offset-4 focus:outline-white"
+          />
+          <div
+            className="absolute rounded-full p-2 hover:bg-gray-600/80 right-2 top-1/2 -translate-y-1/2"
+            onClick={() => setIsShowPassword((prev) => !prev)}
+          >
+            {!isShowPassowrd ? <IoEyeOutline /> : <IoEyeOffOutline />}
+          </div>
+        </div>
         <p className="text-red-500 py-0.5 text-sm/tight font-light">
           {errors.password}
         </p>

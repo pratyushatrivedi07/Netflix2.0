@@ -21,11 +21,14 @@
 - Fetch Movies from Now Playing List in Documentation (API Reference)
 - Custom Hook for fetching Now Playing Movies
 - Created Movie Slice and updated it with Now Playing Movie
-- Planned and Designed MainContainer & SecondaryContainer
+- Planned and Designed MainContainer
 - Fetch Trailer from Movies (Video) List in Documentation (API Reference)
 - Custom Hook for fetching Trailer
 - Updated Movie Slice with Trailer
 - Embedded the Trailer (YouTube) with autoplay and mute
+- Planned and Designed SecondaryContainer
+- Implemented Movie List and Movie Cards
+- TMDB Image CDN for Poster
 
 # Features
 
