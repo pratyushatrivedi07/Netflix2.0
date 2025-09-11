@@ -29,6 +29,11 @@
 - Planned and Designed SecondaryContainer
 - Implemented Movie List and Movie Cards
 - TMDB Image CDN for Poster
+- GPT Search Page
+- Created GPT Slice and implemented toggling of GPT Search page
+- GPT Search Bar and Button
+- Created AppConfig Slice in Redux to store app based features (like multi-ligual, theme, etc)
+- FEATURE: Added Multi-lingual feature in GPT Search Bar
 
 # Features
 

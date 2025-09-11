@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
-import Header from "./Header";
-import { BG_IMG, USER_ICONS } from "../utils/constants";
+import { USER_ICONS } from "../utils/constants";
 import {
   validateEmail,
   validateName,
@@ -130,11 +129,7 @@ const Login = () => {
   };
 
   return (
-    <div className="">
-      <Header />
-      <div className="absolute">
-        <img src={BG_IMG} alt="bgImage" className="bg-cover" />
-      </div>
+    <div className="bg-black h-screen bg-opacity-40">
       <form
         onSubmit={(e) => e.preventDefault()}
         className="w-1/4 absolute p-10 bg-black rounded-lg my-36 mx-auto right-0 left-0 text-white bg-opacity-85"
