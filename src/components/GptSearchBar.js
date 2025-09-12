@@ -54,8 +54,8 @@ const GptSearchBar = () => {
   };
 
   return (
-    <div className="pt-[10%] bg-black flex justify-center bg-opacity-60">
-      <form className="w-1/2" onSubmit={(e) => e.preventDefault()}>
+    <div className="md:pt-[10%] pt-[40%] bg-black flex justify-center bg-opacity-60">
+      <form className="md:w-1/2 w-full" onSubmit={(e) => e.preventDefault()}>
         <div className="relative w-full">
           <button
             className="py-2.5 px-6 bg-red-600 text-white rounded-full cursor-pointer absolute right-1.5 top-1/2 -translate-y-1/2 hover:bg-red-700"

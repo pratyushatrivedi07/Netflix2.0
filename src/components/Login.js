@@ -132,9 +132,9 @@ const Login = () => {
     <div className="bg-black h-screen bg-opacity-60">
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-1/4 absolute p-10 bg-black rounded-lg my-36 mx-auto right-0 left-0 text-white bg-opacity-85"
+        className="w-full md:w-1/4 absolute p-10 bg-black rounded-lg my-36 mx-auto right-0 left-0 text-white bg-opacity-85"
       >
-        <h1 className="font-semibold text-4xl py-3">
+        <h1 className="font-semibold text-2xl md:text-4xl py-3">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSignInForm && (

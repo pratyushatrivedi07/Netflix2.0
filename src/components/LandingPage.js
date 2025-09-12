@@ -7,7 +7,7 @@ const LandingPage = () => {
     <div>
       <Header />
       <div className="absolute -z-10">
-        <img src={BG_IMG} alt="bgImage" className="bg-cover" />
+        <img src={BG_IMG} alt="bgImage" className="object-cover h-screen" />
       </div>
       <Login />
     </div>

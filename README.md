@@ -36,7 +36,12 @@
 - FEATURE: Added Multi-lingual feature in GPT Search Bar
 - Configured OPEN AI Keys
 - Implemented Searching of Movies through OpenAI (3.5-gpt-turbo)
+- Fetched GPT Movies from TMDB
 - Implemented Memoization --> Making API calls only when Redux is empty
+- Made UI Responsive
+  - Default --> Mobile
+  - Md --> Desktop
+  - Sm --> Tabs
 
 # Features
 

@@ -57,14 +57,14 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute px-8 py-2 bg-gradient-to-b from-black w-full z-10 flex justify-between">
+    <div className="absolute md:px-8 py-2 w-full z-10 flex bg-gradient-to-b from-black justify-between">
       <img
-        className={` ${user ? "w-36 ml-10" : "w-44 ml-15"}`}
+        className={` ${user ? "w-36 mx-0" : "w-44 mx-0"}`}
         src={LOGO}
         alt="logo"
       />
       {user && (
-        <div className="flex items-center gap-x-4 p-2">
+        <div className="flex items-center md:gap-x-4 p-2">
           <button
             className="text-white text-sm hover:opacity-70 cursor-pointer p-2 my-2"
             onClick={handleAISearchClick}
@@ -72,15 +72,17 @@ const Header = () => {
             {showGptSearch ? (
               "Home"
             ) : (
-              <span className="flex items-center">
-                Search with AI
-                <PiStarFourFill className="ml-2 w-5 h-5 fill-red-400" />
-              </span>
+              <div>
+                <span className="flex items-center">
+                  Search with AI
+                  <PiStarFourFill className="ml-2 w-5 h-5 fill-red-400" />
+                </span>
+              </div>
             )}
           </button>
           {showGptSearch && (
             <select
-              className="bg-inherit text-white text-sm cursor-pointer outline-none p-2 m-2 hover:opacity-70"
+              className="bg-inherit text-white text-sm cursor-pointer outline-none p-2 hover:opacity-70"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
@@ -99,11 +101,11 @@ const Header = () => {
             <img
               src={user.photoURL}
               alt="icon"
-              className="w-9 h-9 rounded-md"
+              className="hidden md:block w-9 h-9 rounded-md"
             />
             <button
               onClick={handleSignOut}
-              className="text-white text-xs hover:underline hover:underline-offset-2 cursor-pointer"
+              className="text-white text-sm md:text-xs hover:underline hover:underline-offset-2 cursor-pointer"
             >
               Sign Out
             </button>
