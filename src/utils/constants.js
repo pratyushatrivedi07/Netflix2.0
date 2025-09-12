@@ -31,8 +31,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MjZmN2E5MmIxOGZjZTQzN2IwMDgyZWE0Yjk3NTBhZSIsIm5iZiI6MTc1NzA3OTUyNy4zMTIsInN1YiI6IjY4YmFlN2U3Zjc2NzUyODdmZjk0NmFlNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VB3IWeOAwSzys3MgyU0IFug6n_rlfWmsxCm6imcPf0Q",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -57,3 +56,8 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "esp", name: "Spanish" },
 ];
+
+export const DEFAULT_POSTER =
+  "https://www.reelviews.net/resources/img/default_poster.jpg";
+
+export const OPEN_AI_KEY = process.env.REACT_APP_OPEN_AI_KEY;

@@ -34,6 +34,9 @@
 - GPT Search Bar and Button
 - Created AppConfig Slice in Redux to store app based features (like multi-ligual, theme, etc)
 - FEATURE: Added Multi-lingual feature in GPT Search Bar
+- Configured OPEN AI Keys
+- Implemented Searching of Movies through OpenAI (3.5-gpt-turbo)
+- Implemented Memoization --> Making API calls only when Redux is empty
 
 # Features
 

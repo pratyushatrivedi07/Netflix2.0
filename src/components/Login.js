@@ -129,7 +129,7 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-black h-screen bg-opacity-40">
+    <div className="bg-black h-screen bg-opacity-60">
       <form
         onSubmit={(e) => e.preventDefault()}
         className="w-1/4 absolute p-10 bg-black rounded-lg my-36 mx-auto right-0 left-0 text-white bg-opacity-85"
