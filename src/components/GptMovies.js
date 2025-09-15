@@ -13,7 +13,7 @@ const GptMovies = () => {
         <h1 className="text-white font-semibold px-2 md:px-6 text-lg md:text-xl py-6">
           Recommended Movies
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-6 bg-black rounded-xl bg-opacity-70">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 bg-black rounded-xl bg-opacity-70">
           {movieResults.map((movie) => (
             <div key={movie.id} className="px-6 py-7">
               <MovieCard

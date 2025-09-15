@@ -17,19 +17,19 @@ const MovieModal = ({ onClose, movieId }) => {
       onClick={handleOnClose}
     >
       <div
-        className="relative bg-zinc-800 bg-opacity-90 rounded-xl w-2/3 max-h-[100vh] overflow-y-auto"
+        className="relative bg-zinc-800 bg-opacity-90 rounded-xl w-2/3 max-h-[50vh] md:max-h-[100vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={handleOnClose}
-          className="absolute top-4 right-4 text-white text-2xl bg-gray-800 rounded-full px-3 py-1 hover:bg-gray-700 cursor-pointer z-10"
+          className="absolute top-4 right-4 text-white text-lg md:text-2xl bg-gray-800 rounded-full px-2 md:px-3 md:py-1 hover:bg-gray-700 cursor-pointer z-10"
         >
           &times;
         </button>
 
         <MovieClip id={movieId} />
 
-        <div className="p-4">
+        <div className="p-2 md:p-4">
           <MovieInformation id={movieId} />
         </div>
       </div>

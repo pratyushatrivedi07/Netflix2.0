@@ -22,23 +22,23 @@ const LikeDislikeButton = () => {
   return (
     <div>
       <button
-        className="mx-2 rounded-full bg-zinc-800/90 p-2.5 border border-zinc-400"
+        className="mx-2 rounded-full bg-zinc-800/90 p-1 md:p-2.5 border border-zinc-400"
         onClick={handleLike}
       >
         {liked ? (
-          <BsHandThumbsUpFill className="w-6 h-6 fill-white" />
+          <BsHandThumbsUpFill className="w-5 h-5 md:w-6 md:h-6 fill-white" />
         ) : (
-          <BsHandThumbsUp className="text-white w-6 h-6" />
+          <BsHandThumbsUp className="text-white w-5 h-5 md:w-6 md:h-6" />
         )}
       </button>
       <button
-        className="rounded-full bg-zinc-800/90 p-2.5 border border-zinc-400"
+        className="mx-1 rounded-full bg-zinc-800/90 p-1 md:p-2.5 border border-zinc-400"
         onClick={handleDislike}
       >
         {disliked ? (
-          <BsHandThumbsDownFill className="fill-white w-6 h-6" />
+          <BsHandThumbsDownFill className="fill-white w-5 h-5 md:w-6 md:h-6" />
         ) : (
-          <BsHandThumbsDown className="text-white w-6 h-6" />
+          <BsHandThumbsDown className="text-white w-5 h-5 md:w-6 md:h-6" />
         )}
       </button>
     </div>

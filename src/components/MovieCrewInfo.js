@@ -1,6 +1,6 @@
 const MovieCrewInfo = ({ cast, director }) => {
   return (
-    <div className="mt-6 mb-2">
+    <div className="mt-2 lg:mt-6 mb-2 md:text-[16px] text-sm">
       <div className="flex flex-wrap text-gray-300 my-3">
         <span className="text-zinc-400 mr-2">Cast:</span>
         {cast.length > 0 ? (

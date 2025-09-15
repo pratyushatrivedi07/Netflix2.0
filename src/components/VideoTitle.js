@@ -10,9 +10,9 @@ const VideoTitle = ({ title, description, id }) => {
   const handleClose = () => setIsModalOpen(false);
 
   return (
-    <div className="pt-[17%] px-6 md:px-20 absolute bg-gradient-to-r from-black text-white aspect-video w-screen">
-      <h1 className="font-semibold text-2xl md:text-5xl">{title}</h1>
-      <p className="hidden md:inline-block py-6 text-lg/tight w-2/5 text-justify">
+    <div className="pt-[17%] px-6 md:px-10 lg:px-20 absolute bg-gradient-to-r from-black text-white aspect-video w-screen">
+      <h1 className="font-semibold text-2xl lg:text-5xl">{title}</h1>
+      <p className="hidden md:inline-block py-6 text-lg/tight w-3/4 lg:w-2/5 text-justify">
         {description}
       </p>
       <div className="flex items-center my-4">
