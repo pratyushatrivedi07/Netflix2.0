@@ -16,7 +16,11 @@ const GptMovies = () => {
         <div className="grid grid-cols-2 md:grid-cols-6 bg-black rounded-xl bg-opacity-70">
           {movieResults.map((movie) => (
             <div key={movie.id} className="px-6 py-7">
-              <MovieCard poster={movie.poster_path} title={movie.title} />
+              <MovieCard
+                id={movie.id}
+                poster={movie.poster_path}
+                title={movie.title}
+              />
             </div>
           ))}
         </div>

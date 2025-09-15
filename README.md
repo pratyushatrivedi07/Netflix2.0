@@ -42,6 +42,8 @@
   - Default --> Mobile
   - Md --> Desktop
   - Sm --> Tabs
+- Movie Modal when clicked on Movie Poster or More Info button
+- Populated Movie Information in the modal
 
 # Features
 
